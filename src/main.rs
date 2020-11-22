@@ -78,7 +78,7 @@ fn get_current_ip(client: &reqwest::blocking::Client) -> Result<IpAddr, DyfiErro
 
 const PUBLIC_IP_API: &str = "http://checkip.amazonaws.com/";
 const DYFI_API: &str = "https://www.dy.fi/nic/update";
-const LOOP_DELAY: u64 = 3600; // seconds
+const LOOP_DELAY: u64 = 600; // seconds
 const FORCE_UPDATE_INTERVAL: u64 = 3600 * 24 * 5;
 
 fn run() -> Result<DyfiResponseCode, DyfiError> {

@@ -9,3 +9,7 @@ reqwest = { version = "^0.10", features = ["blocking"] }
 dotenv = "^0.15"
 log = "^0.4"
 env_logger = "^0.7"
+
+# Pi 2/3/4
+[target.armv7-unknown-linux-gnueabihf]
+linker = "arm-none-linux-gnueabihf-gcc"
